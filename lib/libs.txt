@@ -1,0 +1,10 @@
+libSDL.a
+libSDLmain.a
+libavcodec.a
+libavdevice.a
+libavfilter.a
+libavformat.a
+libavutil.a
+libs.txt
+libswresample.a
+libswscale.a

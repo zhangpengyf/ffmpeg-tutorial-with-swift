@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E81037B1D82C8CF00A32CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E81037A1D82C8CF00A32CF6 /* AppDelegate.swift */; };
+		6E81037D1D82C8CF00A32CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E81037C1D82C8CF00A32CF6 /* ViewController.swift */; };
+		6E81037F1D82C8CF00A32CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E81037E1D82C8CF00A32CF6 /* Assets.xcassets */; };
+		6E8103821D82C8CF00A32CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8103801D82C8CF00A32CF6 /* Main.storyboard */; };
+		6EF8E2501D82CAD200C18FD8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E24F1D82CAD200C18FD8 /* Carbon.framework */; };
+		6EF8E2521D82CAD900C18FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2511D82CAD900C18FD8 /* AudioToolbox.framework */; };
+		6EF8E2541D82CADF00C18FD8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2531D82CADF00C18FD8 /* VideoToolbox.framework */; };
+		6EF8E2561D82CAE500C18FD8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2551D82CAE500C18FD8 /* libiconv.tbd */; };
+		6EF8E2581D82CAEB00C18FD8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2571D82CAEB00C18FD8 /* libbz2.tbd */; };
+		6EF8E25A1D82CAF100C18FD8 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2591D82CAF100C18FD8 /* VideoDecodeAcceleration.framework */; };
+		6EF8E25C1D82CAF800C18FD8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E25B1D82CAF800C18FD8 /* CoreFoundation.framework */; };
+		6EF8E25E1D82CAFE00C18FD8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E25D1D82CAFE00C18FD8 /* Security.framework */; };
+		6EF8E2601D82CB0700C18FD8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E25F1D82CB0700C18FD8 /* CoreVideo.framework */; };
+		6EF8E2621D82CB1700C18FD8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF8E2611D82CB1700C18FD8 /* CoreMedia.framework */; };
+		6EF8E2651D82CEA700C18FD8 /* Tutorial1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8E2641D82CEA700C18FD8 /* Tutorial1.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E8103771D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ffmpeg-tutorial-with-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E81037A1D82C8CF00A32CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E81037C1D82C8CF00A32CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E81037E1D82C8CF00A32CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E8103811D82C8CF00A32CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E8103831D82C8CF00A32CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF8E24A1D82CA5700C18FD8 /* ffmpeg-tutorial-with-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ffmpeg-tutorial-with-swift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		6EF8E24F1D82CAD200C18FD8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6EF8E2511D82CAD900C18FD8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6EF8E2531D82CADF00C18FD8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6EF8E2551D82CAE500C18FD8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		6EF8E2571D82CAEB00C18FD8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		6EF8E2591D82CAF100C18FD8 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		6EF8E25B1D82CAF800C18FD8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6EF8E25D1D82CAFE00C18FD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6EF8E25F1D82CB0700C18FD8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6EF8E2611D82CB1700C18FD8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6EF8E2641D82CEA700C18FD8 /* Tutorial1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E8103741D82C8CF00A32CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF8E2621D82CB1700C18FD8 /* CoreMedia.framework in Frameworks */,
+				6EF8E2601D82CB0700C18FD8 /* CoreVideo.framework in Frameworks */,
+				6EF8E25E1D82CAFE00C18FD8 /* Security.framework in Frameworks */,
+				6EF8E25C1D82CAF800C18FD8 /* CoreFoundation.framework in Frameworks */,
+				6EF8E25A1D82CAF100C18FD8 /* VideoDecodeAcceleration.framework in Frameworks */,
+				6EF8E2581D82CAEB00C18FD8 /* libbz2.tbd in Frameworks */,
+				6EF8E2561D82CAE500C18FD8 /* libiconv.tbd in Frameworks */,
+				6EF8E2541D82CADF00C18FD8 /* VideoToolbox.framework in Frameworks */,
+				6EF8E2521D82CAD900C18FD8 /* AudioToolbox.framework in Frameworks */,
+				6EF8E2501D82CAD200C18FD8 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E81036E1D82C8CF00A32CF6 = {
+			isa = PBXGroup;
+			children = (
+				6EF8E2631D82CB3000C18FD8 /* lib */,
+				6E8103791D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift */,
+				6E8103781D82C8CF00A32CF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E8103781D82C8CF00A32CF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E8103771D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E8103791D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift */ = {
+			isa = PBXGroup;
+			children = (
+				6EF8E24A1D82CA5700C18FD8 /* ffmpeg-tutorial-with-swift-Bridging-Header.h */,
+				6E81037A1D82C8CF00A32CF6 /* AppDelegate.swift */,
+				6E81037C1D82C8CF00A32CF6 /* ViewController.swift */,
+				6E81037E1D82C8CF00A32CF6 /* Assets.xcassets */,
+				6E8103801D82C8CF00A32CF6 /* Main.storyboard */,
+				6E8103831D82C8CF00A32CF6 /* Info.plist */,
+				6EF8E2641D82CEA700C18FD8 /* Tutorial1.swift */,
+			);
+			path = "ffmpeg-tutorial-with-swift";
+			sourceTree = "<group>";
+		};
+		6EF8E2631D82CB3000C18FD8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6EF8E2611D82CB1700C18FD8 /* CoreMedia.framework */,
+				6EF8E25F1D82CB0700C18FD8 /* CoreVideo.framework */,
+				6EF8E25D1D82CAFE00C18FD8 /* Security.framework */,
+				6EF8E25B1D82CAF800C18FD8 /* CoreFoundation.framework */,
+				6EF8E2591D82CAF100C18FD8 /* VideoDecodeAcceleration.framework */,
+				6EF8E2571D82CAEB00C18FD8 /* libbz2.tbd */,
+				6EF8E2551D82CAE500C18FD8 /* libiconv.tbd */,
+				6EF8E2531D82CADF00C18FD8 /* VideoToolbox.framework */,
+				6EF8E2511D82CAD900C18FD8 /* AudioToolbox.framework */,
+				6EF8E24F1D82CAD200C18FD8 /* Carbon.framework */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E8103761D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E81039C1D82C8CF00A32CF6 /* Build configuration list for PBXNativeTarget "ffmpeg-tutorial-with-swift" */;
+			buildPhases = (
+				6E8103731D82C8CF00A32CF6 /* Sources */,
+				6E8103741D82C8CF00A32CF6 /* Frameworks */,
+				6E8103751D82C8CF00A32CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ffmpeg-tutorial-with-swift";
+			productName = "ffmpeg-tutorial-with-swift";
+			productReference = 6E8103771D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E81036F1D82C8CF00A32CF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zhangpeng;
+				TargetAttributes = {
+					6E8103761D82C8CF00A32CF6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 6E8103721D82C8CF00A32CF6 /* Build configuration list for PBXProject "ffmpeg-tutorial-with-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E81036E1D82C8CF00A32CF6;
+			productRefGroup = 6E8103781D82C8CF00A32CF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E8103761D82C8CF00A32CF6 /* ffmpeg-tutorial-with-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E8103751D82C8CF00A32CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E81037F1D82C8CF00A32CF6 /* Assets.xcassets in Resources */,
+				6E8103821D82C8CF00A32CF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E8103731D82C8CF00A32CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E81037D1D82C8CF00A32CF6 /* ViewController.swift in Sources */,
+				6E81037B1D82C8CF00A32CF6 /* AppDelegate.swift in Sources */,
+				6EF8E2651D82CEA700C18FD8 /* Tutorial1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E8103801D82C8CF00A32CF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E8103811D82C8CF00A32CF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E81039A1D82C8CF00A32CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E81039B1D82C8CF00A32CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6E81039D1D82C8CF00A32CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					./include,
+					./include/SDL/,
+				);
+				INFOPLIST_FILE = "ffmpeg-tutorial-with-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = ./lib/;
+				OTHER_LDFLAGS = (
+					"-lavformat",
+					"-lavcodec",
+					"-lswresample",
+					"-lswscale",
+					"-lz",
+					"-lavutil",
+					"-lSDLmain",
+					"-lSDL",
+					"-Wl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangpeng..ffmpeg-tutorial-with-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ffmpeg-tutorial-with-swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E81039E1D82C8CF00A32CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					./include,
+					./include/SDL/,
+				);
+				INFOPLIST_FILE = "ffmpeg-tutorial-with-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = ./lib/;
+				OTHER_LDFLAGS = (
+					"-lavformat",
+					"-lavcodec",
+					"-lswresample",
+					"-lswscale",
+					"-lz",
+					"-lavutil",
+					"-lSDLmain",
+					"-lSDL",
+					"-Wl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangpeng..ffmpeg-tutorial-with-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ffmpeg-tutorial-with-swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E8103721D82C8CF00A32CF6 /* Build configuration list for PBXProject "ffmpeg-tutorial-with-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E81039A1D82C8CF00A32CF6 /* Debug */,
+				6E81039B1D82C8CF00A32CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E81039C1D82C8CF00A32CF6 /* Build configuration list for PBXNativeTarget "ffmpeg-tutorial-with-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E81039D1D82C8CF00A32CF6 /* Debug */,
+				6E81039E1D82C8CF00A32CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E81036F1D82C8CF00A32CF6 /* Project object */;
+}
