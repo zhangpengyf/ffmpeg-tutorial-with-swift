@@ -1,5 +1,4 @@
 #ffmpeg-tutorial-with-swift
--
 Translate ["An ffmpeg and SDL Tutorial"](http://dranger.com/ffmpeg/ffmpeg.html) to swift language.
 
 1. You will learn how to call C Functions in swift language
