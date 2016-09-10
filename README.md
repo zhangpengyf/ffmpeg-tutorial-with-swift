@@ -2,10 +2,10 @@
 Translate ["An ffmpeg and SDL Tutorial"](http://dranger.com/ffmpeg/ffmpeg.html) to swift language.
 
 1. You will learn how to call C Functions in swift language
-2. You will learn how to use FFMPEG in swift
+2. You will learn how to use FFmpeg in swift
 
 ##usage
-you should copy FFMPEG and SDL librarys to dir:ffmpeg-tutorial-with-swift2/lib
+you should copy FFmpeg and SDL librarys to dir:ffmpeg-tutorial-with-swift2/lib
 
 * libSDL.a
 * libSDLmain.a
@@ -17,4 +17,9 @@ you should copy FFMPEG and SDL librarys to dir:ffmpeg-tutorial-with-swift2/lib
 * libswresample.a
 * libswscale.a
 
-FFMPEG version is n2.8.7-2-g8887daf
+FFmpeg version is n2.8.7-2-g8887daf
+
+##use following commands to get this FFmpeg version:
+* git clone git@github.com:FFmpeg/FFmpeg.git
+* cd FFmpeg
+* git checkout release/2.8
